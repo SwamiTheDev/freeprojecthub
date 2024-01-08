@@ -1,0 +1,24 @@
+.row {
+  /* border: 1px gray solid; */
+  margin: 10px 6px;
+}
+.body {
+  background-color: #f5f8fa !important;
+}
+.img {
+  height: 100%;
+  width: 120% !important;
+}
+.text {
+  border: 2px red solid;
+}
+
+.count {
+  color: hsl(236, 13%, 42%);
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 75%;
+  text-align: left !important;
+}
+show.btn {
+}
