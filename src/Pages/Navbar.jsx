@@ -9,14 +9,14 @@ import { useState } from 'react';
 
 function Topnav() {
     const [isOpen, setOpen] = useState(false);
-    const [isClose, setClose] = useState(true);
+    // const [isClose, setClose] = useState(true);
     function Closebtn() {
         setOpen(false)
     }
     return (
         <>
             {['lg'].map((expand) => (
-                <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3" style={{ height: '7vh' }}>
+                <Navbar key={expand} sticky="top" expand={expand} className="bg-body-tertiary mb-3" style={{ height: '7vh' }}>
                     <Container >
                         <Navbar.Brand href="#" className={style.navbar_brand}>FreeProjecthub </Navbar.Brand>
                         <Navbar.Toggle className={style.toggle_btn} aria-controls={`offcanvasNavbar-expand-${expand}`} ><Hamburger duration={0.5} toggled={isOpen} toggle={setOpen} direction="right" easing="ease-in" /></Navbar.Toggle>
