@@ -1,74 +1,52 @@
-export default function TopNav() {
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import style from './Navbar.module.css'
+import { Sling as Hamburger } from 'hamburger-react'
+import { useState } from 'react';
+
+function Topnav() {
+    const [isOpen, setOpen] = useState(false);
+    const [isClose, setClose] = useState(true);
+    function Closebtn() {
+        setOpen(false)
+    }
     return (
         <>
-            <nav
-                class="navbar navbar-expand-md navbar-light bg-light"
-            >
-                <div class="container">
-                    <a class="navbar-brand" href="#">FreeProjectHub</a>
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" aria-current="page"
-                                >Home
-                                    <span class="visually-hidden">(current)</span></a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                >Projects</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                    >Full Stack Projects</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                    >Front End projects</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                    >Landing Page </a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                    >Templates</a
-                                    >
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-
+            {['lg'].map((expand) => (
+                <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3" style={{ height: '7vh' }}>
+                    <Container >
+                        <Navbar.Brand href="#" className={style.navbar_brand}>FreeProjecthub </Navbar.Brand>
+                        <Navbar.Toggle className={style.toggle_btn} aria-controls={`offcanvasNavbar-expand-${expand}`} ><Hamburger duration={0.5} toggled={isOpen} toggle={setOpen} direction="right" easing="ease-in" /></Navbar.Toggle>
+                        {/* <navbar.toggle aria-controls="basic-navbar-nav">   </navbar.toggle> */}
+                        <Navbar.Offcanvas
+                            id={`offcanvasNavbar-expand-${expand}`}
+                            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                            placement="start"
+                        >
+                            <Offcanvas.Header closeButton onClick={Closebtn}>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                                    fg
+                                </Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body>
+                                <Nav className="justify-content-end flex-grow-1 pe-3">
+                                    <Nav.Link href="#action1" className={style.navlink}>Home</Nav.Link>
+                                    <Nav.Link href="#action2" className={style.navlink}>About</Nav.Link>
+                                    <Nav.Link href="#action2" className={style.navlink}>Projects</Nav.Link>
+                                    <Nav.Link href="#action2" className={style.navlink}>Blog</Nav.Link>
+                                    <Nav.Link href="#action2" className={style.navlink}>Contact</Nav.Link>
+                                </Nav>
+                            </Offcanvas.Body>
+                        </Navbar.Offcanvas>
+                    </Container>
+                </Navbar >
+            ))
+            }
         </>
-    )
+    );
 }
+
+export default Topnav;
