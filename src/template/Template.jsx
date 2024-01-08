@@ -1,11 +1,20 @@
-import TopNav from "../Pages/Navbar"
+// import Test3 from "../Components/test";
+import { Container } from "react-bootstrap";
+import Homesection from "../Pages/Homepage";
+import Topnav from "../Pages/Navbar";
+import ServiceSection from "../Pages/Services";
+import Project from "../Pages/Projectsection";
 
 export default function Templates() {
     return (
         <>
-            <TopNav />
-            <div className="container">
-            </div>
+            <Topnav />
+            <Container >
+                <Homesection />
+                <ServiceSection />
+                <Project />
+            </Container>
+            {/* <Test3 /> */}
         </>
     )
 }
