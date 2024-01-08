@@ -1,0 +1,35 @@
+.service_title {
+  font-weight: 900;
+  color: hsl(240, 100%, 5%);
+  font-family: "inter";
+  text-transform: capitalize;
+  /* border-bottom: 1px solid hsl(35, 77%, 62%); */
+}
+@media only screen and (max-width: 600px) {
+  .__img {
+    /* border: 2px red solid; */
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* padding: 10px !important; */
+  }
+  .service_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .__img {
+    /* border: 2px red solid; */
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* padding: 10px !important; */
+  }
+  .service_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
