@@ -1,0 +1,38 @@
+.service_title {
+  font-weight: 900;
+  color: hsl(240, 100%, 5%);
+  /* font-family: "inter"; */
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+  .__img {
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .service_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .__img {
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .service_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 787px) {
+  .__img {
+    width: 20%;
+  }
+}
