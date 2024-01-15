@@ -19,6 +19,7 @@
 @media only screen and (max-width: 600px) {
   .containers {
     font-family: "Outfit", sans-serif;
+    height: 90vh;
   }
   .title {
     font-size: 18px;
@@ -47,6 +48,7 @@
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .containers {
     font-family: "Outfit", sans-serif;
+    height: 90vh;
   }
   .title {
     font-size: 18px;
@@ -77,6 +79,7 @@
   .containers {
     font-family: "Outfit", sans-serif;
     margin-top: 15% !important;
+    height: 90vh;
   }
   .title {
     font-size: 18px;
