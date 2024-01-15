@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap");
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 50%;
+}
+input#fullName,
+input#email,
+input#phone,
+textarea#message {
+  border: none;
+  border-bottom: 2px black solid;
+  border-radius: 0px;
+}
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none !important ;
+}
+.invalid-feedback input {
+  border-bottom: 2px red solid !important;
+}
+.showcase {
+  font-family: outfit;
+}
+.showcase h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+}
+.__line {
+  color: gray;
+}
+.hero-text {
+  color: hsl(240, 100%, 5%);
+  opacity: 70%;
+}
+
+.showcase div:first-child article p {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.showcase > div:last-child {
+  background-color: hsl(240, 100%, 5%);
+  margin-top: 2rem;
+  padding: 1.25rem 1.25rem 0;
+}
+
+.showcase > div:last-child h4 {
+  font-weight: 800;
+  color: hsl(35, 77%, 62%);
+}
+.colored {
+  color: hsl(5, 85%, 63%) !important;
+}
+
+.showcase > div:last-child article {
+  padding: 1.25rem 0;
+}
+
+.showcase > div:last-child article:not(:last-child) {
+  border-bottom: 1px solid hsl(235, 29%, 74%);
+}
+
+.showcase > div:last-child h5 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.showcase > div:last-child h5:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .showcase h1 {
+    font-size: 3rem;
+  }
+
+  .showcase > div:first-child article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    place-items: center;
+    margin-top: 2rem;
+  }
+
+  .showcase > div:last-child {
+    margin-top: 0;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .showcase > div:last-child {
+    width: 100%;
+    margin: auto;
+  }
+  .__service {
+    width: 80%;
+  }
+  .invalid-feedback {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  label {
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .__service_card {
+    margin-top: -30px !important;
+  }
+}
