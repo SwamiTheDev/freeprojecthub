@@ -33,12 +33,7 @@
 .navlink:hover {
   color: black;
 }
-.navlink:hover {
-  border-bottom: 3px solid hsl(5, 85%, 63%);
-  border-top: 3px solid hsl(5, 85%, 63%);
-  transition: 5ms;
-  transition-timing-function: ease-in-out;
-}
+
 .navlink {
   margin-right: 2px;
 }
