@@ -1,0 +1,57 @@
+.cards {
+  background: hsl(240, 100%, 5%);
+}
+.title {
+  color: hsl(35, 77%, 62%);
+}
+.text {
+  color: hsl(235, 29%, 74%);
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: none;
+    background: hsl(240, 100%, 5%);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .cards {
+    display: none;
+    background: hsl(240, 100%, 5%);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .cards {
+    padding: 15px;
+    background: hsl(240, 100%, 5%);
+  }
+  .title {
+    color: hsl(35, 77%, 62%);
+    font-size: 17px;
+    opacity: 100%;
+  }
+  .text {
+    font-size: 13px;
+    color: hsl(235, 29%, 74%);
+    opacity: 70%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .cards {
+    padding: 15px;
+    background: hsl(240, 100%, 5%);
+  }
+  .title {
+    color: hsl(35, 77%, 62%);
+    font-size: 17px;
+    opacity: 100%;
+  }
+  .text {
+    font-size: 13px;
+    color: hsl(235, 29%, 74%);
+    opacity: 70%;
+  }
+}
