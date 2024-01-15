@@ -111,6 +111,10 @@ textarea:active {
     width: 100%;
     margin: auto;
   }
+  .showcase {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .__service {
     width: 80%;
   }
