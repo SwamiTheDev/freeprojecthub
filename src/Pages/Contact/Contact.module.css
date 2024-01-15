@@ -1,0 +1,166 @@
+.input ._textarea {
+  border: none;
+  border-radius: 0px !important;
+  border-bottom: 2px black solid;
+}
+.input:focus {
+  box-shadow: none !important;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.title {
+  color: hsl(5, 85%, 63%);
+}
+.label {
+  color: hsl(240, 100%, 5%) !important;
+}
+@media only screen and (max-width: 600px) {
+  .containers {
+    font-family: "Outfit", sans-serif;
+  }
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .lottieContainer {
+    width: 300px;
+    height: 180px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+  }
+  .label {
+    font-size: 14px;
+  }
+  .left_col {
+    height: 200px;
+  }
+  .btn {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .containers {
+    font-family: "Outfit", sans-serif;
+  }
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .lottieContainer {
+    width: 400px;
+    height: 180px;
+    /* margin-left: -20px; */
+    display: flex;
+    justify-content: center;
+  }
+  .label {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .left_col {
+    height: 200px;
+  }
+  .btn {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .containers {
+    font-family: "Outfit", sans-serif;
+    margin-top: 15% !important;
+  }
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .lottieContainer {
+    width: 400px !important;
+    height: 480px !important;
+    margin-left: -70px;
+  }
+  .label {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .left_col {
+    height: 200px;
+  }
+  .btn {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .containers {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center !important;
+    margin-top: 20%;
+  }
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .lottieContainer {
+    width: 200px;
+    height: 380px;
+    /* margin-left: -20px; */
+    display: flex;
+    justify-content: center;
+  }
+  .label {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .left_col {
+    height: 200px;
+  }
+  .btn {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .containers {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center !important;
+    margin-top: 10%;
+    height: 80vh;
+  }
+  .title {
+    font-size: 23px;
+    text-align: center;
+  }
+  .lottieContainer {
+    width: 500px;
+    height: 480px;
+    /* margin-left: -20px; */
+    display: flex;
+    justify-content: center;
+  }
+  .label {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .left_col {
+    height: 200px;
+  }
+  .btn {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
