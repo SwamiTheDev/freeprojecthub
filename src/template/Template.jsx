@@ -1,20 +1,22 @@
-// import Test3 from "../Components/test";
-import { Container } from "react-bootstrap";
-import Homesection from "../Pages/Homepage";
-import Topnav from "../Pages/Navbar";
-import ServiceSection from "../Pages/Services";
-import Project from "../Pages/Projectsection";
+import Topnav from '../Pages/Navbar/Navbar'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import routes from '../Routes/routes';
+import MarkdownViewer from '../Components/markdownviewer/MarkdownViewer';
 
 export default function Templates() {
     return (
         <>
-            <Topnav />
-            <Container >
-                <Homesection />
-                <ServiceSection />
-                <Project />
-            </Container>
-            {/* <Test3 /> */}
+            <Router>
+                <Topnav />
+                <div className="container mt-4">
+                    <Routes>
+                        {routes.map((route, index) => (
+                            <Route key={index} path={route.path} element={route.component} />
+                        ))}
+                    </Routes>
+                </div>
+
+            </Router>
         </>
     )
 }
