@@ -1,0 +1,22 @@
+.projects {
+  font-family: outfit;
+}
+.pagination {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.latestblogtitle {
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  color: hsl(5, 85%, 63%);
+}
+@media only screen and (max-width: 600px) {
+  .latestblogtitle {
+    display: none;
+  }
+}
