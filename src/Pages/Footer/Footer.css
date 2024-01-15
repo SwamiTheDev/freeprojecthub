@@ -159,6 +159,9 @@ footer h4 {
 }
 
 @media only screen and (max-width: 600px) {
+  .container {
+    padding-top: 10px;
+  }
   .__footer_title {
     text-align: left;
   }
@@ -169,5 +172,45 @@ footer h4 {
     width: 100%;
     display: block;
     text-align: left !important;
+  }
+  .__text {
+    font-size: 13px;
+  }
+  .__title {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .container {
+    padding-top: 10px;
+  }
+  .__links {
+    width: 100%;
+    display: block;
+    text-align: left !important;
+  }
+  .__text {
+    font-size: 13px;
+  }
+  .__title {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    padding-top: 10px;
+  }
+  .__links {
+    width: 100%;
+    display: block;
+    text-align: left !important;
+  }
+  .__text {
+    font-size: 14px;
+  }
+  .__title {
+    font-size: 16px;
   }
 }
