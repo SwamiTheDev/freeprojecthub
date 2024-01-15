@@ -1,9 +1,10 @@
 import Homesection from "../Pages/Home/Homepage";
-// import ServiceSection from "../Pages/Services/Services";
 import Project from "../Pages/Project/ProjectSection";
 import ContactForm from "../Pages/Contact/ContactSection";
 import Blog from "../Pages/Blog/BlogSection.jsx";
 import ProjectCard from "../Components/Project/Projectcard";
+import PageNotFound from "../Pages/PageNotFound/PageNotfound.jsx";
+import ServiceSection from "../Pages/Services/Services.jsx";
 
 const routes = [
   { path: "/", component: <Homesection />, exact: true },
@@ -19,7 +20,8 @@ const routes = [
   { path: "/contactus", component: <ContactForm /> },
   { path: "/contactme", component: <ContactForm /> },
   // <Route path="/post/:id" component={BlogPost} />,
-  { path: "/blog", component: <Blog /> },
+  { path: "/service", component: <ServiceSection /> },
+  { path: "*", component: <PageNotFound /> },
   // { path: "/blogs", component: <Home /> },
 ];
 
