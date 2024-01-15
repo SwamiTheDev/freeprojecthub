@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+.navlink {
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  font-size: 16px;
+}
+.navbar_brand {
+  color: hsl(5, 85%, 63%);
+  color: black;
+  /* color: hsl(35, 77%, 62%); */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  font-size: x-large;
+  display: flex;
+  font-family: "Rubik Doodle Shadow", system-ui;
+}
+.navbar_brand:hover {
+  color: hsl(5, 85%, 63%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.__dot {
+  color: black !important;
+  font-weight: 900;
+  font-size: 30px;
+  background-color: red;
+}
+
+.navlink:hover {
+  color: black;
+}
+.navlink:hover {
+  border-bottom: 3px solid hsl(5, 85%, 63%);
+  border-top: 3px solid hsl(5, 85%, 63%);
+  transition: 5ms;
+  transition-timing-function: ease-in-out;
+}
+.navlink {
+  margin-right: 2px;
+}
+.toggle_btn {
+  cursor: pointer;
+  border: none !important;
+  outline: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navlink {
+    color: red;
+  }
+  .navbar_brand {
+    font-size: 16px;
+  }
+  button.navbar-toggler.collapsed {
+    border: none !important;
+  }
+}
