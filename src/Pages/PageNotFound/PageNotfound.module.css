@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1201px) {
+  .lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 30%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+}
